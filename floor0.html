@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Metropolia Campus</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/floors.js"></script>
+	<script src="js/script.js"></script>
+	<script>var floor = 0;</script>
+
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Slabo+27px" rel="stylesheet">
+</head>
+<body>
+	<input type="checkbox" id="sidebartoggler">
+
+	<div class="container" id="ground-floor">
+		<label for="sidebartoggler" class="toggle">☰</label>
+
+		<div class="floor"><p>Floor 0</p></div>
+
+		<div id="map-canvas"></div>
+
+		<nav class="sidebar">
+			<ul>
+				<li><a id="ground" class="selected" href="floor0.html">0</a></li>
+				<li><a id="first" href="index.html">1</a></li>
+				<li><a id="second" href="floor2.html">2</a></li>
+				<li><a id="third" href="floor3.html">3</a></li>
+			</ul>
+		</nav>
+	</div>
+</body>
+</html>
